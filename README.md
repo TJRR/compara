@@ -1,0 +1,2 @@
+# compara
+Script de comparação
