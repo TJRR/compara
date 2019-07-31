@@ -13,12 +13,16 @@ Six,
 Numpy
 
 ### Instalação:
-	sudo apt install python3 python3-pip // sudo yum install python35 python-pip
-	sudo -H pip install --default-timeout=100 -r algorithms.txt
-  
+	$ sudo apt install python3 python3-pip // sudo yum install python35 python-pip
+	$ sudo -H pip3 install --upgrade setuptools
+	$ sudo -H pip3 install --default-timeout=100 -r requiriments.txt
+	$ python3
+	>>> import nltk
+	>>> nltk.download('stopwords')
+	>>> quit ()
   
 ### Execução:
-  python comparar.py -d base.txt amostra.txt
+  	$ python comparar.py -d base.txt amostra.txt
 
 ### Detalhes:
 Este script calcula similaridade textual a partir da semelhança do conteúdo semântico em oposição à semelhança estimada em sua representação sintática. Já a dissimilaridade foi calculada com base na estrutura sintática do texto em oposição ao sentido das unidades linguísticas. Por esse motivo uma técnica não refletiu, necessariamente, o inverso da outra.
@@ -49,3 +53,6 @@ funções sofisticadas;
 ferramentas para integrar código C / C ++ e Fortran;
 álgebra linear útil, transformada de Fourier e capacidades de números aleatórios
 Além de seus usos científicos óbvios, o NumPy também pode ser usado como um contêiner multidimensional eficiente de dados genéricos, onde tipos de dados arbitrários podem ser definidos, o que permite sua integração de forma fácil e rápida a uma ampla variedade de bancos de dados.
+
+### Créditos:
+	https://github.com/lw4z/Similarities
