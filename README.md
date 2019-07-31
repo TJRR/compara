@@ -1,3 +1,26 @@
+## Primeiros passos
+Este estudo tem o objetivo medir a qualidade de transcrições de áudio para texto no idioma Português Brasil.
+Para analisar as transcrições são utilizados algoritmos em python 3 para medir os graus de precisão das transcrições.
+Para simular este estudo, basta seguir as intruções abaixo. 
+Para dar inicio aos testes é necessário obter o texto original (base.txt) e o texto adivindo de uma transcrição gerado de forma automática utilizando uma API de transcrição (amostra.txt)
+
+### Pré-requisitos
+Python 3,
+NLTK,
+Jiwer,
+Distance,
+Six,
+Numpy
+
+### Instalação:
+	sudo apt install python3 python3-pip // sudo yum install python35 python-pip
+	sudo -H pip install --default-timeout=100 -r algorithms.txt
+  
+  
+### Execução:
+  python comparar.py -d base.txt amostra.txt
+
+### Detalhes:
 Este script calcula similaridade textual a partir da semelhança do conteúdo semântico em oposição à semelhança estimada em sua representação sintática. Já a dissimilaridade foi calculada com base na estrutura sintática do texto em oposição ao sentido das unidades linguísticas. Por esse motivo uma técnica não refletiu, necessariamente, o inverso da outra.
 Para análise dos resultados foram utilizados cinco algoritmos computacionais capazes de estimar a força da relação semântica entre os textos a partir de uma descrição numérica obtida pela comparação das informações, e assim, definindo a distância ou a proximidade de edição dos termos textuais.
 O primeiro algoritmo utilizado foi a Distância Levenshtein, uma métrica que tem como finalidade medir a diferença entre duas sequências de caracteres. A segunda baseou-se no algoritmo WER (Word Error Rate), que define a taxa de erro de palavras, sendo usado frequentemente para verificar a precisão de sistemas de reconhecimento de fala. Assim como a  Distância de Levenshtein, o WER define a distância pela quantidade de operações mínimas que devem ocorrer para que as amostras fiquem idênticas, mas ao contrário da ​primeira as operações são avaliadas com base nas palavras e não em caracteres individuais.
