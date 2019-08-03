@@ -31,22 +31,22 @@ O primeiro algoritmo utilizado foi a Distância Levenshtein, uma métrica que te
 Para o cálculo da similaridade foi adotado um terceiro algoritmo, o WRR (Word Recognition Rate) uma métrica que define a taxa de reconhecimento de palavras, sendo na verdade o inverso do WER. Outro algoritmo adotado foi o coeficiente de Jaccard, que mede a similaridade entre dois conjuntos dividindo a interseção dos conjuntos pela sua união. Por fim, foi utilizada uma abordagem mais semântica, analisando apenas os graus de similaridade entre o texto original e o texto transcrito e, para este fim, foi utilizado o algoritmo baseado no coeficiente entre os cossenos de similaridade.
 Para aplicação do benchmarking foram utilizados scripts escritos em python e difundidos no meio científico e organizacional, sendo eles: NLTK, Jiwer, Distance, Six e Numpy.
 
-NLTK
+#### NLTK
 O Natural Language Toolkit (NLTK), é um conjunto de bibliotecas e programas para processamento de linguagem natural simbólica e estatística. Desenvolvido no Departamento de Computação e Ciência da Informação da Universidade da Pensilvânia por Steven Bird e Edward Loper, o NLTK inclui demonstrações gráficas e dados de amostragem e destina-se a apoiar a pesquisa e o ensino em Programação Neurolinguística ou em áreas estreitamente relacionadas, incluindo linguística empírica, ciência cognitiva, inteligência artificial, recuperação de informações e aprendizado de máquina. 
 O NLTK tem sido usado com sucesso como uma ferramenta de ensino, como uma ferramenta de estudo individual, e como uma plataforma para prototipagem e construção de sistemas de pesquisa, pois suporta funcionalidades de classificação, tokenização, stremming, marcação, análise e raciocínio semântico.
 
-Jiwer
+#### Jiwer
 O Jiwer implementa métodos para calcular o WER (Word error rate), ou seja, a taxa de erro de palavras entre uma sentença verdadeira e uma sentença hipotética, é geralmente uma medida de desempenho para um sistema de reconhecimento automático de fala. Ele Calcula a distância mínima de edição entre a sentença correta e a sentença transcrita automaticamente por um sistema informatizado usando o algoritmo de Wagner-Fisher. Como esse algoritmo calcula a distância mínima de edição de nível de caractere, cada palavra de uma frase é atribuída a um inteiro único e a distância de edição é calculada sobre uma cadeia de inteiros.
 
-Distance
+#### Distance
 Este pacote fornece diversas funcionalidades matemáticas para calcular semelhanças entre sequências arbitrárias. Entre as diversas métricas incluídas neste pacote é possível citar: Levenshtein, Hamming, Jaccard, Sorensen e alguns bônus. Todos os cálculos de distância são implementados em Python puro, e a maioria deles podem ser implementados também em C.
 A distância de Hamming e Levenshtein podem ser normalizadas, de modo que os resultados de várias medidas de distância possam ser significativamente comparados. Inclusive o pacote distance disponibiliza duas estratégias para Levenshtein: o comprimento de menor distância e o comprimento mais longo.
 Entre os bônus, há a função fast_comp, que calcula a distância entre duas strings até um valor de 2 incluído. Se a distância entre as strings for maior que isso, -1 será retornado. Esta função é de uso limitado, mas por outro lado é bastante mais rápida que a Levenshtein.
 
-Six
+#### Six
 Six é uma biblioteca de compatibilidade entre o Python 2 e 3 (2 * 3 = 6). Todo o código do six está contido em apenas um arquivo Python e tem como objetivo fornecer funções utilitárias para suavizar as diferenças entre as versões, auxiliando no processo de escrever códigos em Python que sejam compatíveis em ambas as versões.
 
-Numpy
+#### Numpy
 NumPy é um pacote para a linguagem Python que suporta arrays e matrizes multidimensionais, possuindo uma larga coleção de funções matemáticas para trabalhar com estas estruturas. NumPy é um pacote fundamental para computação científica com o Python. Ele contém entre outras coisas:
 um poderoso objeto array N-dimensional;
 funções sofisticadas;
